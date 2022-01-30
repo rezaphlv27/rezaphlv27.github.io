@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latihan Hosting</title>
+    <link rel="stylesheet" type="text/css" href="w3.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="w3-container">
+        <img src="apkit.png" style="width: 100%;">
+    </div>
+    <div class="w3-bar" style="background-color: #FE5722; color: white;">
+        <button class="w3-bar-item w3-button" onclick="host('home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="host('profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="host('unikomart')">Unikomart</button>
+        <button class="w3-bar-item w3-button" onclick="host('kampus')">Kampus</button>
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Foto</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="host('unikomdu')">Unikom Dipatiukur</button>
+                <button class="w3-bar-item w3-button" onclick="host('unikomdago')">Unikom Dago</button>
+                <button class="w3-bar-item w3-button" onclick="host('unikomart1')">Unikomart</button>
+                <button class="w3-bar-item w3-button" onclick="host('hitsunikom')">Hits Unikom Radio</button>
+            </div>
+        </div>
+    </div>
+    <!-- layers -->
+    <div id="home" class="w3-container website" style="display:none">
+        <div class="w3-panel w3-blue w3-round-xxlarge w3-animate-left">
+            <h2>Home</h2>
+        </div>
+        <div class="w3-panel w3-gray w3-round-xxlarge w3-animate-bottom">
+        <center>
+            <h1>Belajar HTML dan CSS</h1>
+            <p>Mata Kuliah Pemprograman WEB 1<br>
+            Mata Kuliah Komputer Aplikasi IT-1<br>
+            Universitas Komputer Indonesia</p>
+        </center>
+        </div>
+        <div class="w3-container w3-animate-right w3-pink w3-round-xxlarge">
+                <h4>M. Reza Pahlevi IF2</h4>
+        </div>
+    </div>
+    <div id="profile" class="w3-container website" style="display:none">
+        <div class="w3-animate-zoom">
+            <iframe src="https://www.unikom.ac.id" style=" border:none; width:100%; height:500px;">
+            </iframe>
+        </div>
+    </div>
+    <div id="unikomart" class="w3-container website" style="display:none;">
+        <div class="w3-container w3-animate-bottom" style="background-image: url('Unikomart.jpg'); background-size: 100% 150%; background-attachment: fixed;">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0364430737354!2d107.6124123145086!3d-6.886238369296801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e726d1fc9a81%3A0x8c081ff35726b40f!2sUnikom%20mart!5e0!3m2!1sid!2sid!4v1643040446826!5m2!1sid!2sid" width="600" height="450" style="border:0; width:300px; height:300px;" allowfullscreen=""></iframe>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    <div id="kampus" class="w3-container website" style="display:none;">
+        <div class="w3-container w3-animate-bottom" style="background-image: url('Unikom-du.jpg'); background-size: 100% 100%; background-attachment: fixed;">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.030944662121!2d107.61308781477265!3d-6.886896895023499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6f8aa08188b%3A0x632d24e6061e8903!2sUniversitas%20Komputer%20Indonesia%20(UNIKOM)!5e0!3m2!1sid!2sid!4v1643042005938!5m2!1sid!2sid" width="600" height="450" style="border:0; width:300px; height:300px;" allowfullscreen=""></iframe>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    <div id="unikomdu" class="w3-container website" style="display:none;">
+        <div class="w3-animate-bottom">
+            <img src="unikom-du.jpg" style="width: 100%;">
+        </div>
+    </div>
+    <div id="unikomdago" class="w3-container website" style="display:none;">
+        <div class="w3-animate-left">
+            <img src="unikom_dago.jpg" style="width: 100%;">
+        </div>
+    </div>
+    <div id="unikomart1" class="w3-container website" style="display:none;">
+        <div class="w3-animate-bottom">
+            <img src="unikomart.jpg" style="width: 100%;">
+        </div>
+    </div>
+    <div id="hitsunikom" class="w3-container website" style="display:none;">
+        <div class="w3-animate-right">
+            <img src="hitsunikom.jpg" style="width: 100%;">
+        </div>
+    </div>
+
+<script>
+function host(webhost) {
+    var i;
+    var x = document.getElementsByClassName("website");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+    document.getElementById(webhost).style.display = "block"; 
+}
+</script>
+</body>
+</html>
